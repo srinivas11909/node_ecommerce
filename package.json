@@ -4,7 +4,7 @@
   "description": "ecommerce jewellwers shop online 1gm gold and remaining items",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node index.js"
   },
   "author": "srinivas",
   "license": "ISC",
