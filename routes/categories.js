@@ -2,7 +2,7 @@ var router = require('express').Router();
 const CategorySchema = require('../models/Categories')
 
 
-router.post('/addCategories', async (req, res) => {
+router.post('/api/v1/addCategories', async (req, res) => {
     console.log(req.body);
     const category = new CategorySchema(req.body)
     try{
@@ -14,7 +14,7 @@ router.post('/addCategories', async (req, res) => {
     }
 })
 
-router.get('/getCategories', async (req, res) => {
+router.get('/api/v1/getCategories', async (req, res) => {
     try{
        const category = await CategorySchema.find({})
        res.send(category);
