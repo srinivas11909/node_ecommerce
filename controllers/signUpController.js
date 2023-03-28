@@ -8,7 +8,6 @@ exports.signup = async (req, res) => {
   try {
     // Get user input
     const { email, password } = req.body;
-   console.log(User);
     // Validate user input
     if (!(email && password)) {
       res.status(400).send("All input is required");
@@ -38,8 +37,6 @@ exports.signup = async (req, res) => {
     );
     // save user token
     user.token = token;
-    console.log(user);
-
     // return new user
     res.status(201).send(user);
   } catch (err) {
