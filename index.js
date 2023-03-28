@@ -14,6 +14,9 @@ app.use(express.urlencoded({ extended: true }));
 
 //routing
 var categoryRoutes = require('./routes/categories');
+var loginRoutes = require('./routes/login');
+var signupRoutes = require('./routes/signup');
+
 app.use(function(req, res, next) { 
     //allow cross origin requests
     res.setHeader("Access-Control-Allow-Methods", "POST, PUT, OPTIONS, DELETE, GET");
@@ -24,7 +27,9 @@ app.use(function(req, res, next) {
 
 
 
-app.use('/api/v1/categories', categoryRoutes)
+app.use('/api/v1/categories', categoryRoutes);
+app.use('/api/v1/login', loginRoutes);
+app.use('/api/v1/signup', signupRoutes);
 
 
 
