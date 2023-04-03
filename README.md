@@ -1,7 +1,7 @@
 download and go inside folder run npm i 
 <br/>
-https://ecommercenode.herokuapp.com/api/v1/categories - GET
+https://node-ecommerce-app.onrender.com/api/v1/categories - GET
 <br/>
-https://ecommercenode.herokuapp.com/api/v1/login - POST
+https://node-ecommerce-app.onrender.com/api/v1/categories - POST
 <br/>
-https://ecommercenode.herokuapp.com/api/v1/signup - POST
+https://node-ecommerce-app.onrender.com/api/v1/categories - POST
